@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-semibold text-blue-600 mt-6">Money Master</h1>
+    </header>
+    <main>
+        <section class="px-20 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-green-400">
+                    <img class="w-full" src="images/image.png" alt="">
+                </div>
+                <div class="bg-sky-100 ">
+                    <div class="text-right w-9/12 mx-auto">
+                        <h1 class="text-center font-semibold text-2xl mt-4">Income</h1>
+                        <div class="p-3 ml-10">
+                            <h1 class="inline font-semibold">Income: </h1>
+                            <input id="income-field" class="w-3/4 h-10 ml-3 pl-3" type="text">
+                        </div>
+                        <h1 class="text-2xl text-center font-semibold text-blue-600 py-2">Expenses</h1>
+                        <div class="p-2 ml-10">
+                            <h1 class="inline font-semibold">Food: </h1>
+                            <input id="food" class="w-3/4 h-10 ml-3 pl-3" type="text">
+                        </div>
+                        <div class="p-2 ml-10">
+                            <h1 class="inline font-semibold">Rent: </h1>
+                            <input id="rent" class="w-3/4 h-10 ml-3 pl-3" type="text">
+                        </div>
+                        <div class="p-2 ml-10">
+                            <h1 class="inline font-semibold">Clothes: </h1>
+                            <input id="clothes" class="w-3/4 h-10 ml-3 pl-3" type="text">
+                        </div>
+
+                    </div>
+                    <div class="text-center p-3 ml-10">
+                        <button id="btn-calculate"
+                            class="hover:bg-blue-700 focus:bg-green-800 text-white py-3 px-10 rounded-lg font-semibold bg-blue-500">Calculate</button>
+                        <h1 class="font-semibold text-2xl p-2">Total Expenses: <span id="total-expenses">00</span></h1>
+                        <h1 class="font-semibold text-2xl p-2">Balance: <span id="balance-total">00</span></h1>
+                    </div>
+                    <div class="w-9/12 mx-auto flex flex-col md:flex-row gap-5 md:items-center">
+                        <h1 class="font-semibold">Save: </h1>
+                        <input id="save-total" class="h-10 pl-3" type="text">
+                        <h1>%</h1>
+                        <button id="btn-save"
+                            class="hover:bg-blue-700 focus:bg-green-800 text-white py-3 px-10 rounded-lg font-semibold bg-blue-500">Save</button>
+                    </div>
+                    <h1 class="text-center font-semibold text-2xl p-2">Saving Amount: <span id="saving-amount">00</span>
+                    </h1>
+                    <h1 class="text-center font-semibold text-2xl p-2">Remaining Balance: <span
+                            id="remaining-balance">00</span></h1>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/money.js"></script>
+</body>
+
+</html>
